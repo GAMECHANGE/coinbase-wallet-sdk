@@ -2,7 +2,7 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "rootDir": ".",
+    "rootDir": "./src",
     "target": "es2017",
     "jsx": "react",
     "jsxFactory": "h",
@@ -17,18 +17,16 @@
       "**/node_modules",
       "__tests__",
       "dist",
-      "build",
       "**/*.test.*",
     ],
   },
   "include": [
     "./src",
     "**/*.test.*",
-    "./jest.setup.ts"
+    "global.d.ts",
   ],
   "exclude": [
     "dist",
-    "build",
   ]
 }
  
